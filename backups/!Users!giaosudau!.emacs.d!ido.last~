@@ -1,0 +1,38 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/giaosudau/clojure_workspace/phatam_api/src/" . "phatam_api/")
+ ("/Users/giaosudau/clojure_workspace/phatam_api/" . "src/")
+ ("/Users/giaosudau/clojure_workspace/" . "phatam_api/")
+ ("/Users/giaosudau/" . "clojure_workspace/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/giaosudau/clojure_workspace/phatam_api/src/phatam_api/"
+ "/Users/giaosudau/clojure_workspace/phatam_api/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "core.clj"
+ "profiles.clj"
+ "project.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/giaosudau/clojure_workspace/phatam_api/src/phatam_api/" (22736 39505 0 0) "core.clj" "../" "./")
+
+ ("/Users/giaosudau/" (22736 55480 0 0) "zeppelin/" "zep.zip" "workspace/" "words.txt" "VirtualBox VMs/" "test_log.csv" "test_druid/" "test_data/" "statistics.csv" "statistic_hourly_2016-08-22-07.json" "spark-job.txt" "spark-druid-olap/" "spark-2.1.0-bin-hadoop2.7.tgz" "spark-2.1.0-bin-hadoop2.7/" "spark-2.0.1-bin-hadoop2.7/" "spark-2.0.0-bin-hadoop2.6/" "spark-1.6.1-hadoop2.6/" "spark-1.6.1-bin-hadoop2.6/" "scala-2.10.4/" "run.sh" "roll_up_jobs.db" "RMK_COOKIE_REPORT/" "rest.tar.gz" "rest/" "redis.conf" "query_by_hour.txt" "query_by_day.txt" "python-env/" "PycharmProjects/" "Public/" "project/" "Pictures/" "oracle-jdbc/" "node_modules/" "Music/" "Movies/" "migrate-historical-data/" "metastore_db/" "mesos-slave.conf" "mesos-init-wrapper" "mesos-0.28.1/" "memsql-ops-5.0.3/" "mapred-site.xml" "macosx" "mac-cli/" "logs/" "log4j.xml" "log.txt.zip" "log.txt" "Library/" "Karabiner-Elements/" "kafka_2.11-0.9.0.0.tgz" "kafka_2.11-0.9.0.0/" "kafka_2.11-0.8.2.1/" "jobs/" "job_final.json" "jdk-8u77-linux-x64.tar.gz" "input06.txt" "index.html" "imply-1.3.0/" "IdeaProjects/" "haproxy.cfg" "hadoop-2.7.3/" "gclog.txt" "Flask-AppBuilder/" "FACT_ADMIN_HOURLY/" "FACT_ADMIN_DAILY/" "fact_ad_stats_daily.parquet/" "FACT_AD_STATS_DAILY/" "etl_info.zip" "etl_info/" "error.txt" "Envs/" "dump.rdb" "druid-0.9.1-bin.tar.gz" "druid-0.9.1 2/" "druid-0.9.1/" "druid/" "dracula-theme/" "Downloads/" "Documents/" "dockers/" "Desktop/" "dcos/" "data_example/" "create_db.sql" "ConvertJob/" "clojure_workspace/" "chuagiacngo.tar.gz" "chuagiacngo/" "Chanh le Resume.docx" "cassandra-mesos-0.2.0-1.tar.gz" "cars.csv" "caravel-env/" "bullet.py" "Applications/" "app.log" "app-2016-12-01-02-1.log.gz" "app-2016-12-01-02-1.log" "app-2016-12-01-01-1.log.gz" "app-2016-12-01-01-1.log" "apache-drill-1.6.0/" "apache-cassandra-3.5/" "android-sdk-macosx/" "analytics-index-daily.json" "alluxio-1.0.1/" "alluxio/" "airflow/" "Aggregate Graph.png" "AD_COOKIE_REPORT/" "a.log" "2016_Spark_Survey.pdf" "2016-07-25-19-0.csv" "2016-06-29-23.sh" "1462319992516/" ".zshrc" ".zsh_history" ".zsh-update" ".zinc/" ".zcompdump-Chanh’s MacBook Pro-5.2" ".zcompdump-Chanh’s MacBook Pro-5.0.8" ".wget-hsts" ".vscode/" ".virtualenvs/" ".viminfo" ".vim/" ".vertx/" ".Trash/" ".ssh/" ".sqlline/" ".spark_history" ".spacemacs" ".sh_history" ".scala_history" ".sbt/" ".rnd" ".rediscli_history" ".python_history" ".python-eggs/" ".PyCharm50/" ".psql_history" ".path" ".oracle_jre_usage/" ".oh-my-zsh/" ".odbcinst.ini" ".odbc.ini" ".npmrc" ".npm/" ".node_repl_history" ".node-gyp/" ".mysql_history" ".matplotlib/" ".mapr.drillodbc.ini" ".m2/" ".local/" ".lein/" ".jprofiler9/" ".ivy2/" ".ideaLibSources/" ".idea-build/" ".idea/" ".hivehistory" ".gradle/" ".gnupg/" ".gitconfig" ".gem/" ".exports" ".emacs.d/" ".DS_Store" ".docker/" ".devcenter/" ".config/" ".composer/" ".CFUserTextEncoding" ".cassandra/" ".cache/" ".beeline/" ".bash_prompt" ".bash_profile" ".bash_history" ".android/" ".aliases" "#-------------------------------------------------" "../" "./")
+
+ ("/Users/giaosudau/clojure_workspace/phatam_api/" (22736 38991 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj~" "project.clj" "profiles.clj" "LICENSE" "doc/" "CHANGELOG.md" ".lein-repl-history" ".hgignore" ".gitignore" ".cljs_rhino_repl/" "../" "./")
+
+ ("/Users/giaosudau/clojure_workspace/phatam_api/src/" (22722 30775 0 0) "phatam_api/" "../" "./")
+
+ ("/Users/giaosudau/clojure_workspace/" (22722 30775 0 0) "phatam_api/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

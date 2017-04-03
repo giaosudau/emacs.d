@@ -1,0 +1,34 @@
+
+;; ----- smex-history -----
+(
+ cider-doc
+ cider-jack-in
+ list-packages
+ package-list-packages
+ package-install
+ clojure-mode
+ cider-mode
+)
+
+;; ----- smex-data -----
+(
+ (cider-jack-in . 15)
+ (cider-run . 2)
+ (cider-ping . 1)
+ (projectile-recentf . 1)
+ (color-theme-tomorrow-night-eighties . 1)
+ (color-theme-tomorrow-night-blue . 1)
+ (color-theme-tomorrow-night . 1)
+ (color-theme-tomorrow . 1)
+ (cider-completion-flush-caches . 3)
+ (java-mode . 1)
+ (cider-mode . 1)
+ (clojure-mode . 1)
+ (paredit-close-square . 2)
+ (paredit-open-square . 1)
+ (package-install . 1)
+ (package-list-packages . 1)
+ (list-packages . 1)
+ (move-text-up . 1)
+ (cider-doc . 1)
+)

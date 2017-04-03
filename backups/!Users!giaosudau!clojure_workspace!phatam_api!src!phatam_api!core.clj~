@@ -1,0 +1,278 @@
+(ns phatam-api.core)
+
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello,  world!")
+  (println "Cleanliness is next to godliness"))
+
+
+(defn error-message 
+  [x]
+  (if (= x :mild)
+    "true"
+    "false"))
+
+(error-message :mild)
+
+(error-message :play)
+
+
+(def name "Chanh")
+(str "Hello" "-" name) ;; only concat string via str function
+
+
+(def name {:name "Chanh"})
+
+(get name :name)
+
+{:firstname "Chanh" 
+ :lastname "Le"}
+
+(hash-map :a 1 :b 2)
+
+(def address-info {:name "Chanh" :address {:street "dong lan", :district "hoc mon"}})
+(get-in address-info [:address :street])
+(address-info :address)
+
+(conj [1 2 3 4] 5)
+
+(nth '(3 2 3 4) 0)
+(conj '(1 2 3) 5)
+
+
+#{1 2 "chanh" 4 5}
+
+(conj #{"chanh" 2 3} 2)
+
+(contains? #{1 2 3 4} 4)
+
+
+(inc 1)
+ap inc [1 2 3]
+
+
+(defn fibonaci
+  "Fibonaci"
+  [n]
+  n)
+
+(fibonaci 4)
+
+(defn codger-communication
+  [whippersnapper]
+  (str "Get off my lawn, " whippersnapper "!!!"))
+
+(defn codger 
+  [& whippersnappers]
+  (map codger-communication whippersnappers))
+
+(codger "Billy" "Annie-Marie" "The Incredible Bulk")
+
+(defn my-first
+  [[first-thing]]
+  first-thing
+)
+(my-first [1 2 3 4])
+
+(defn chooser 
+  [[first-choice second-choice & unimportant-choices]]
+  (println (str "Your first choice is: " first-choice))
+  (println (str "Your second choice is: " second-choice))
+  (println (str "We're ignoring the rest of your choices. "
+                "Here they are in case you need to cry over them: "
+                (clojure.string/join ", " unimportant-choices))))
+
+(chooser ["Marmalade" "Handsome Jack" "Pigpen" "Aquaman"])
+
+(defn announce-treasure-location
+  [{:keys [lat long]}]
+  (println (str "Treasure lat: " lat))
+  (println (str" Treasure long: " long))
+  )
+
+
+(announce-treasure-location {:lat 34 :long 99})
+
+
+(defn number-comment
+  [x]
+  (if (> x 6)
+    "Oh my gosh! What a big number!"
+    "That number's OK, I guess"))
+
+(number-comment 6)
+(number-comment 7)
+
+(map (fn [name] (str "Hi, " name))
+     ["Darth Vader" "Mr. Magoo"])
+
+((fn [x] (* x 3)) 8)
+
+(#(* % 3) 8)
+
+(#(str %1 " and " %2) "chanh" "le")
+(#(identity %&) 1 "hello" 3)
+
+(defn inc-maker
+  "Create a custom incrementor"
+  [inc-by]
+  #(+ % inc-by))
+
+(def inc3 (inc-maker 3))
+
+(inc3 7)
+
+(inc3 8)
+
+(inc 3)
+(println address-info)
+
+(name :name)
+
+
+((fn [x] (* x 8)) 9)
+
+
+(def asym-hobbit-body-parts [{:name "head" :size 3},
+                             {:name "left-eye" :size 4},
+                             {:name "left-ear" :size 3},
+                             {:name "head" :size 3},
+                             {:name "head" :size 3},
+                             {:name "head" :size 3},
+                             {:name "head" :size 3},
+                             {:name "head" :size 3},
+                             {:name "head" :size 3},
+                             {:name "head" :size 3},
+                             {:name "head" :size 3}
+                             ])
+
+
+
+
+
+(def dalmatian-list 
+  ["Pongo" "Perdita" "Puppy 1" "Puppy 2"])
+(let [dalmatians (take 2 dalmatian-list)]
+  dalmatians)
+
+(def x 0)
+(let [x 1] x)
+(let [x (inc x)] x)
+
+(let   [[pongo & dalmatians] dalmatian-list])
+
+(let [[pongo & dalmatians] dalmatian-list]
+  [pongo dalmatians])
+
+
+(into [] (set [:a :a]))
+
+
+
+(loop [interation 0]
+  (println (str "Interation " interation))
+  (if (> interation 3)
+    (println "Goodbye!")
+    (recur (inc interation))))
+
+
+(loop [interation 0]
+  (recur))
+
+(defn recursive-printer
+  ([]
+   (recursive-printer 0))
+  ([interation]
+   (println interation)
+   (if (> interation 3)
+     (println "Goodbye!")
+     (recursive-printer (inc interation)))))
+
+(recursive-printer)
+
+#"regular-expression"
+
+(re-find #"^left-" "left-eye")
+(re-find #"^left-" "cleft-chin")
+
+
+(defn matching-part
+  [part]
+  {:name (clojure.string/replace (:name part) #"^left-" "right-")
+   :size (:size part)})
+
+(matching-part {:name "left-eye" :size 1})
+
+(matching-part {:name "head" :size 3})
+
+
+(def asym-hobbit-body-parts [{:name "head" :size 3}
+                             {:name "left-eye" :size 1}
+                             {:name "left-ear" :size 1}
+                             {:name "mouth" :size 1}
+                             {:name "nose" :size 1}
+                             {:name "neck" :size 2}
+                             {:name "left-shoulder" :size 3}
+                             {:name "left-upper-arm" :size 3}
+                             {:name "chest" :size 10}
+                             {:name "back" :size 10}
+                             {:name "left-forearm" :size 3}
+                             {:name "abdomen" :size 6}
+                             {:name "left-kidney" :size 1}
+                             {:name "left-hand" :size 2}
+                             {:name "left-knee" :size 2}
+                             {:name "left-thigh" :size 4}
+                             {:name "left-lower-leg" :size 3}
+                             {:name "left-achilles" :size 1}
+                             {:name "left-foot" :size 2}])
+
+
+
+(defn symmetrize-body-parts
+  "Expects a seq of maps that have a :name and :size"
+  [asym-hobbit-body-parts]
+  (loop [remaining-asym-parts asym-hobbit-body-parts
+         final-body-parts []]
+    (if (empty? remaining-asym-parts)
+      final-body-parts
+      (let [[part & remaining] remaining-asym-parts]
+        (recur remaining
+               (into final-body-parts
+                     (set [part (matching-part part)])))))))
+
+(symmetrize-body-parts asym-hobbit-body-parts)
+
+
+(defn my-reduce
+  ([f initial coll]
+   (loop [result initial
+          remaining coll]
+     (if (empty? remaining)
+       result
+       (recur (f result (first remaining)) (rest remaining)))))
+  ([f [head & tail]]
+   (my-reduce f head tail)))
+
+
+(defn better-symmertrize-body-parts
+"Expects a seq of maps that have a :name and :size"
+  [asym-hobbit-body-parts]
+  (reduce (fn [final-body-parts part]
+            (into final-body-parts (set [part (matching-part part)])))
+          []
+          asym-hobbit-body-parts))
+
+
+(better-symmertrize-body-parts asym-hobbit-body-parts)
+
+
+
+(defn inc-100
+  [n]
+  (+ 100 n))
+
+(inc-100 4)
+
+
+
