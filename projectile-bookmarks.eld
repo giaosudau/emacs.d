@@ -1,1 +1,0 @@
-("~/clojure_workspace/phatam_api/")
