@@ -77,7 +77,9 @@
 
     ;; hightlight cursor
     beacon
-
+    ;; undo tree
+    undo-tree
+    
     ;; Emacs relative line number based on nlinum-mode
     nlinum-relative
 
@@ -94,6 +96,20 @@
     ;; https://github.com/magnars/expand-region.el
     expand-region
 
+    ;; Scala mode
+    ensime
+    scala-mode
+    sbt-mode
+
+    ;; python 
+    elpy
+    jedi
+    company-jedi
+    flycheck
+    py-autopep8
+    ;;
+    ido-vertical-mode
+    
     ;;
     exec-path-from-shell
 
@@ -176,6 +192,13 @@
 ;; Hard-to-categorize customizations
 (load "misc.el")
 
+;; Scala
+(load "scala.el")
+
+;; Python
+(load "setup-python.el")
+;; Python auto-remove
+;;(load "auto-remove.el")
 ;; For editing lisps
 (load "elisp-editing.el")
 
@@ -197,10 +220,11 @@
     ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" default)))
  '(package-selected-packages
    (quote
-    (beacon company tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (undo-tree company-jedi jedi yaml-mode beacon company tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'downcase-region 'disabled nil)

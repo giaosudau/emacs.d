@@ -88,7 +88,7 @@
 
 ;; aggressive-indent-mode is a minor mode that keeps your code always indented. 
 (global-aggressive-indent-mode 1)
-;(add-to-list 'aggressive-indent-excluded-modes 'html-mode)
+(add-to-list 'aggressive-indent-excluded-modes 'python-mode)
 
 (defun move-text-internal (arg)
   (cond
@@ -136,3 +136,5 @@
 
 ;;
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
+;; undo tree
+(global-undo-tree-mode)

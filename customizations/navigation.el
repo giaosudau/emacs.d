@@ -49,6 +49,12 @@
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; vertial mode
+(require 'ido-vertical-mode)
+(ido-mode 1)
+(ido-vertical-mode 1)
+(setq ido-vertical-define-keys 'C-n-and-C-p-only)
+
 
 ;; Enhances M-x to allow easier execution of commands. Provides
 ;; a filterable list of possible commands in the minibuffer
@@ -59,3 +65,8 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+
+;; switch between windows quickly
+(windmove-default-keybindings)
+(setq org-replace-disputed-keys t)
